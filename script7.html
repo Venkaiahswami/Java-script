@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function age(){
+           
+            if(document.getElementById("t1").value==document.getElementById("t2").value){
+                document.getElementById("age").innerHTML="Equal Numbers"
+
+            }
+            else if (document.getElementById("t1").value>document.getElementById("t2").value){
+                document.getElementById("age").innerHTML="First Number is Large"
+
+            }  
+            else if (document.getElementById("t1").value<document.getElementById("t2").value){
+                document.getElementById("age").innerHTML="Second Number is Large"
+
+            } 
+        }
+    </script>
+    <h1>First Number <input type="text" id="t1"><br></h1>
+    <h1>Second Number <input type="text" id="t2"><br></h1>
+    <button type="button" onclick="age()">Verify</button>
+    <div id="age"></div>
+</body>
+</html>

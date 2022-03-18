@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #age{
+            
+            color: rgb(142, 68, 145);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function age(){
+            /*if(document.getElementById("t1").value>=18){
+                window.alert("Eligible For Vote");
+            }
+            else {
+                window.alert("Not Eligible For Vote");
+            }*/
+            if(document.getElementById("t1").value>=18){
+                document.getElementById("age").innerHTML="Eligible For Vote"
+
+            }
+            else{
+                document.getElementById("age").innerHTML="Not Eligible For Vote"
+
+            }
+            
+            
+
+        }
+    </script>
+    <h1>Enter Your Age <input type="text" id="t1"><br></h1>
+    <button type="button" onclick="age()">Verify</button>
+    <div id="age"></div>
+   
+</body>
+</html>
